@@ -9,4 +9,4 @@ and fosters a supportive community among students. By digitizing the lost and fo
 Collens N. Maderse, 
 Kenneth James R. Antonio, 
 Casmer Anton B. Siega, 
-Leonel Dave L. Liza
+Leonel Dave L. Liza, Brynth Dave T. Gunayan
