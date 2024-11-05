@@ -2,10 +2,10 @@
 BUKSU LOST AND FOUND SYSTEM
 
 #GROUP COLLABORATION WITH:
-Collens Maderse
-Casmer Anton Siega
-Kenneth Antonio
-Brynth Gunayan
+Collens Maderse,
+Casmer Anton Siega,
+Kenneth Antonio,
+Brynth Gunayan,
 Liza, Leonel Dave
 
 # React + Vite
