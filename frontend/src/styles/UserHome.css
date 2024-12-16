@@ -1,0 +1,39 @@
+/* User Home Page Styles */
+.user-home {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  color: #4CAF50;
+}
+
+.dashboard-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-links a {
+  display: block;
+  width: 200px;
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-links a:hover {
+  background: #45a049;
+}

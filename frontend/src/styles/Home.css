@@ -1,0 +1,16 @@
+/* src/styles/Home.css */
+.home {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.home h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+}

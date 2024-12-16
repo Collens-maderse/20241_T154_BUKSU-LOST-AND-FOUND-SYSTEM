@@ -1,0 +1,50 @@
+/* Inbox Container */
+.inbox-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.inbox-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.message-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.message-card strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.message-card .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+  font-style: italic;
+}

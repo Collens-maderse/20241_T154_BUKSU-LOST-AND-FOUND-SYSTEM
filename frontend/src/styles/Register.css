@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+/* Main Page Container */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: row; /* Ensure left and right are side-by-side */
+  width: 90%;
+  max-width: 1100px; /* Adjust container width */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Panel */
+.register-left {
+  flex: 1;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Padding for spacing */
+}
+
+
+/* Right Panel */
+.register-right {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.register-right h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: #555;
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #1da1f2;
+  box-shadow: 0 0 5px rgba(29, 161, 242, 0.5);
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-button:hover {
+  background-color: #0d8ddb;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  color: #aaa;
+}
+
+.signin {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signin-link {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.recaptcha {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}/* Add styles for Google Login container */
+.google-login {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 10px; /* Add some spacing above */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .register-wrapper {
+    flex-direction: column; /* Stack panels vertically */
+    width: 100%;
+    height: auto;
+  }
+
+  .register-left {
+    padding: 10px;
+  }
+
+  .register-left .logo {
+    max-width: 60%;
+  }
+
+  .register-right {
+    padding: 20px;
+  }
+}

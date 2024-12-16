@@ -1,0 +1,107 @@
+/* General Page Styles */
+.post-item-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  padding: 30px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.post-item-page h2 {
+  color: #4caf50;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Form Container */
+.post-item-form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.post-item-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #444;
+}
+
+.post-item-form input,
+.post-item-form select,
+.post-item-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item-form input:focus,
+.post-item-form select:focus,
+.post-item-form textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.post-item-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Submit Button */
+.post-item-form button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.post-item-form button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.post-item-form button:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+/* Error and Success Messages */
+.post-item-form .error {
+  color: #d32f2f;
+  background-color: #f9dada;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.post-item-form .success {
+  color: #388e3c;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}

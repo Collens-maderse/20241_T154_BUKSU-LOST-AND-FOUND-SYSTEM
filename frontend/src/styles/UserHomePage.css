@@ -1,0 +1,299 @@
+/* General Layout */
+.user-home {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background: #f5f8fa;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}.sidebar a {
+  text-decoration: none;
+  color: inherit;
+}.sidebar h2, .sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #2600ff;
+}
+
+.post-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Feed Section */
+.feed {
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.feed h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.items-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-post {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-header {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.post-body {
+  text-align: center;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.post-category {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* Post Actions (Likes and Comments) */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Like Button */
+.like-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Like Button */
+/* Like Button */
+.like-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  display: inline-flex; /* Use inline-flex to fit content */
+  align-items: center;
+  padding: 0; /* Remove padding */
+  width: auto; /* Ensure button width matches content */
+  gap: 5px;
+}
+
+.like-button i {
+  color: #555; /* Default heart color */
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: color 0.3s ease, transform 0.1s ease;
+}
+
+.like-button.liked i {
+  color: #e0245e; /* Red for liked state */
+}
+
+.like-button span {
+  font-size: 1rem;
+  color: #333; /* Text color for count */
+}
+
+.like-button:hover {
+  background: none; /* Ensure no background on hover */
+  box-shadow: none; /* Remove any shadow effects */
+}
+
+.like-button i:hover {
+  transform: scale(1.2); /* Slight grow effect on hover */
+}
+
+
+
+/* Comments Section */
+.comments-section {
+  margin-top: 15px;
+}
+
+.comments-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comments-section ul li {
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.comments-section input {
+  width: calc(100% - 70px);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.comments-section button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: #007bff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.right-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-sidebar ul li {
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Scrollable Content */
+.feed::-webkit-scrollbar {
+  width: 8px;
+}
+
+.feed::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.feed::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-home {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .sidebar,
+  .right-sidebar {
+    display: none;
+  }
+
+  .feed {
+    grid-column: 1 / span 3;
+  }
+}
+.bookmark-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bookmark-button.bookmarked {
+  color: #555; /* Default heart color */
+  font-size: 1.3rem; /* Adjust icon size */
+  transition: color 0.3s ease, transform 0.1s ease;
+}
+
+.bookmark-button:hover {
+  background: none; /* Ensure no background on hover */
+  box-shadow: none; /* Remove any shadow effects */
+}
+.category-filter {
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-filter select {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
