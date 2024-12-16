@@ -1,0 +1,33 @@
+/* src/components/HomePageNavbar.css */
+.homepage-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 15px;
+}
+
+.navbar-logo h1 {
+  color: white;
+  margin: 0;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  color: #dcdcdc;
+}
