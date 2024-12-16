@@ -1,0 +1,6 @@
+# Ignore node_modules and lock files
+**/node_modules/
+**/package-lock.json
+
+# Ignore nested git repositories
+frontend/.git
